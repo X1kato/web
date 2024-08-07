@@ -1,0 +1,85 @@
+  
+   <!--test.ejsで入力した情報を表示（DBの情報を全て）-->
+    <% ticketTable.forEach((ticket) => { %>
+
+        <!-- ➀タイトル -->
+        <div class="title">
+            <p>チケット購入情報</p>
+        </div>
+
+        <!-- ➁購入情報の枠 -->
+        <div class="ticket_box">
+
+            <!-- ➂購入情報 -->
+            <div class="ticket_info">
+
+                <p>チケットID : <%= ticket.id %></p>
+            
+                <p>名前 : <span><%= ticket.last_name %></span>&emsp;<span><%= ticket.first_name %></span></p>
+    
+                <!-- 日付文字列を Date オブジェクトに変換 -->
+                <% const date = new Date(ticket.birthday) %>
+    
+                <!-- 年、月、日を取得 -->
+                <% const year = date.getFullYear() %>
+                <% const month = date.getMonth() + 1 %>
+                <% const day = date.getDate() %>
+            
+                <!-- フォーマットした日付を表示 -->
+                <% const formattedDate = `${year}年${month}月${day}日` %>
+                <p>生年月日 : <span><%= formattedDate %></span></p>
+                          
+                <p>電話番号 : <span><%= ticket.tel_number %></span></p>
+                
+                <p>メールアドレス : <span><%= ticket.mail %></span></p>
+    
+                <!-- 日付文字列を Date オブジェクトに変換 -->
+                <% const date_ticket = new Date(ticket.appointment_date) %>
+    
+                <!-- 年、月、日を取得 -->
+                <% const year_ticket = date_ticket.getFullYear() %>
+                <% const month_ticket = date_ticket.getMonth() + 1 %>
+                <% const day_ticket = date_ticket.getDate() %>
+            
+                <!-- フォーマットした日付を表示 -->
+                <% const formattedDate_Ticket = `${year_ticket}年${month_ticket}月${day_ticket}日` %>
+                <p>ご来園日 : <span><%= formattedDate_Ticket %></span></p>
+    
+                <p>大人チケット購入枚数 : <span><%= ticket.adult_ticket %></span>枚</p>
+    
+                <p>子供チケット購入枚数 : <span><%= ticket.child_ticket %></span>枚</p>
+
+            </div>
+        </div>
+     
+    <% }) %>
+
+
+    <style type="text/css">
+
+        /* ➀タイトル */
+        .title{
+            width: 20%;
+            margin: auto;
+            margin-top: 50px;
+            font-size: 1.7vw;
+            font-weight: bold;
+        }
+
+        /* ➁購入情報の枠 */
+        .ticket_box{
+            background-color: rgb(218, 244, 248);
+            width: 70%;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        /* ➂購入情報 */
+        .ticket_info{
+            width: 50%;
+            margin: auto;
+        }
+
+
+    </style>
+

@@ -1,0 +1,21 @@
+
+<html>
+  <body>
+
+    <h1>top.ejsです。</h1>
+
+    <!--test.ejsで入力した情報を表示（DBの情報を全て）-->
+    <% memberTable.forEach((member) => { %>
+        <div>
+            <p>
+                <span>ID：<%= member.id %></span>&emsp; <!-- &emsp;は全角スペース -->
+                <span>名前：<%= member.last_name %></span>&nbsp; <!-- &nbsp;は半角スペース -->
+                <span><%= member.first_name %></span>&emsp;
+                <span>クラス：<%= member.class %></span>
+            </p>
+        </div>
+     
+    <% }) %>
+
+  </body>
+</html>

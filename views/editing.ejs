@@ -1,0 +1,11 @@
+<h1>editing.ejsです。</h1>
+
+<form action="/update/<%=ticketTable.id %>" method="post">
+  <p>ID</p>
+  <input type="number" value="<%= ticketTable.id %>" disabled="disabled" >
+  <p>NAME</p>
+  <input type="text" name="LastName" value="<%= ticketTable.last_name %>">
+  <input type="submit" value="編集">
+  <input type="text" name="FirstName" value="<%= ticketTable.first_name %>">
+  <input type="submit" value="編集">
+</form>
