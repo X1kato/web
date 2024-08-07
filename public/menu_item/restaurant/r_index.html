@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>レストラン</title>
+    <link rel="stylesheet" href="r_css/r_style.css">
+</head>
+<body>
+    <!--➀ヘッダー-->
+    <header>レストラン</header>
+
+    <!--➁メニュー-->
+    <nav>
+        <!--ボタン-->
+        <div class="btn">
+            <i></i>
+            <i></i>
+            <i></i>
+        </div>
+
+        <!--メニュー中身-->
+        <div class="container">
+            <div class="item">
+                <ul>
+                    <li><a href="../ticket/t_index.html">チケット・営業時間</a></li>
+                    <li><a href="../access/a_index.html">アクセス</a></li>
+                    <li><a href="../../index.html">ホーム</a></li>
+                </ul>
+                <ul>
+                    <li><a href="../restaurant/r_index.html">レストラン</a></li>
+                    <li><a href="../goods/g_index.html">グッズ</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--➂選択ボタン-->
+    <div class="choice">
+
+        <!--Ⓐごはん-->
+        <div class="button" id="food_btn">ごはん</div>
+
+        <!--Ⓑショップボタン-->
+        <div class="button" id="shop_btn">ショップ</div>
+
+    </div>
+
+    <!--➃メイン-->
+    <main>
+        <!--Ⓐごはん-->
+        <div class="food">
+
+            <!-- ➈ごはんボタン枠 -->
+            <div class="food_buttons">
+                <!-- ➉ごはんボタン単体 -->
+                <button class="food_button food_active" data-name="all">全て</button>
+                <button class="food_button" data-name="pan">ジャムおじさんのパン工場</button>
+                <button class="food_button" data-name="a_restaurant">アンパンマンレストラン</button>
+                <button class="food_button" data-name="hamburger">ハンバーガーやさん</button>
+                <button class="food_button" data-name="udon">うどんやさん</button>
+                <button class="food_button" data-name="gohan">ごはんやさん</button>
+                <button class="food_button" data-name="soft">ソフトクリームやさん</button>
+            </div>
+
+            <!-- (11)ごはんアイテム枠 -->
+            <div class="food_items">
+
+                <!-- (12)グッズアイテム -->
+                <!-- 1 -->
+                <div class="food_item" data-name="pan">
+                    <img src="r_img/box_item/pan/1jamy6pzxzehkplo8y91pz0h5zwu3u.png" alt="" />
+                    <p>アンパンマン<br>ジャムおじさんのパン工場</p>
+                </div>
+                <!-- 2 -->
+                <div class="food_item" data-name="a_restaurant">
+                    <img src="r_img/box_item/a_restaurant/ubyaccctjl222r97najhufexjtaatq.jpg" alt="" />
+                    <p>アンパンマンキッズプレート<br>アンパンマンレストラン</p>
+                </div>
+                <!-- 3 -->
+                <div class="food_item" data-name="hamburger">
+                    <img src="r_img/box_item/hamburger/21k3niprmavoyrw0x2p23fdukjmavu.jpg" alt="" />
+                    <p>チーズバーガー（ポテト付き）<br>ハンバーガーやさん</p>
+                </div>
+                <!-- 4 -->
+                <div class="food_item" data-name="udon">
+                    <img src="r_img/box_item/udon/wufpo736tyc63pnnvevefxpthqdkq6.png" alt="" />
+                    <p>おこさまうどん（どんぶり付き）<br>うどんやさん</p>
+                </div>
+                <!-- 5 -->
+                <div class="food_item" data-name="gohan">
+                    <img src="r_img/box_item/gohan/2wlwwja31wnkn0ht3uabc5qkfo2tj9.jpg" alt="" />
+                    <p>どんぶり付きローストビーフ丼<br>ごはんやさん</p>
+                </div>
+                <!-- 6 -->
+                <div class="food_item" data-name="gohan">
+                    <img src="r_img/box_item/gohan/z8840pvvp8d0dkpa9h80f4bvx94iqo.jpg" alt="" />
+                    <p>ぶたまんまん<br>ごはんやさん</p>
+                </div>
+                <!-- 7 -->
+                <div class="food_item" data-name="soft">
+                    <img src="r_img/box_item/soft/28m07vj6vvqwc0oc03kr5gk3k9gg7a.png" alt="" />
+                    <p>スーベニアミルキーソフト<br>ソフトクリームやさん</p>
+                </div>
+                <!-- 8 -->
+                <div class="food_item" data-name="pan">
+                    <img src="r_img/box_item/pan/wd50vz3d8w5cwlch4jlqy7yow4w6cg.jpg" alt="" />
+                    <p>カフェラテ「ルルン」<br>ジャムおじさんのパン工場</p>
+                </div>
+                <!-- 9 -->
+                <div class="food_item" data-name="a_restaurant">
+                    <img src="r_img/box_item/a_restaurant/oxz83fygbxhvwl5s2ttz4bxexam5ef.png" alt="" />
+                    <p>プレミアムバースデープラン<br>アンパンマンレストラン</p>
+                </div>
+                <!-- 10 -->
+                <div class="food_item" data-name="hamburger">
+                    <img src="r_img/box_item/hamburger/m2tdtfemp4mw4j643xe5q9nj6lp1fa.png" alt="" />
+                    <p>あまくちカレーパンマンカレー<br>ハンバーガーやさん</p>
+                </div>
+                <!-- 11 -->
+                <div class="food_item" data-name="gohan">
+                    <img src="r_img/box_item/gohan/gfdu1bjmb5t141418s9nluj202t2gu.jpg" alt="" />
+                    <p>えび天丼<br>ごはんやさん</p>
+                </div>
+                <!-- 12 -->
+                <div class="food_item" data-name="soft">
+                    <img src="r_img/box_item/soft/1enwvl4x2gfgrr1com1yuzckdu8mxv.png" alt="" />
+                    <p>かき氷<br>ソフトクリームやさん</p>
+                </div>
+                <!-- 13 -->
+                <div class="food_item" data-name="pan">
+                    <img src="r_img/box_item/pan/cposd66pawv22ekc6lzmnskam5c7gl.png" alt="" />
+                    <p>ばいきんまん<br>ジャムおじさんのパン工場</p>
+                </div>
+                <!-- 14 -->
+                <div class="food_item" data-name="a_restaurant">
+                    <img src="r_img/box_item/a_restaurant/fr0kd7vqu87td5db3ivkh37lfux4w9.png" alt="" />
+                    <p>バースデーパック<br>アンパンマンレストラン</p>
+                </div>
+                <!-- 15 -->
+                <div class="food_item" data-name="hamburger">
+                    <img src="r_img/box_item/hamburger/mt4kyqwu3sn5dljkbv88yrgb7o21o6.jpg" alt="" />
+                    <p>よくばりアイス<br>ハンバーガーやさん</p>
+                </div>
+                <!-- 16 -->
+                <div class="food_item" data-name="gohan">
+                    <img src="r_img/box_item/gohan/4zgbq3sqxpu8v2l97umxr6a8lu847j.jpg" alt="" />
+                    <p>抹茶みるく<br>ごはんやさん</p>
+                </div>
+                <!-- 17 -->
+                <div class="food_item" data-name="pan">
+                    <img src="r_img/box_item/pan/5sjpb538gvka0gylb58j8teu0i8ekx.png" alt="" />
+                    <p>ドキンちゃん<br>ジャムおじさんのパン工場</p>
+                </div>
+                <!-- 18 -->
+                <div class="food_item" data-name="hamburger">
+                    <img src="r_img/box_item/hamburger/mqyg0zhaz2mkvjds9ay77ns5eyeib5.jpg" alt="" />
+                    <p>ベビーカステラ<br>ハンバーガーやさん</p>
+                </div>
+                <!-- 19 -->
+                <div class="food_item" data-name="gohan">
+                    <img src="r_img/box_item/gohan/gc14zpxz64r7fy9g5eo7xqdpbj26pc.png" alt="" />
+                    <p>わっぱごはん<br>ごはんやさん</p>
+                </div>
+                <!-- 20 -->
+                <div class="food_item" data-name="pan">
+                    <img src="r_img/box_item/pan/bizurckgjt4npyv18mbyjwcbhdubk3.png" alt="" />
+                    <p>コキンちゃん<br>ジャムおじさんのパン工場</p>
+                </div>
+                <!-- 21 -->
+                <div class="food_item" data-name="soft">
+                    <img src="r_img/box_item/soft/nt37nb6eaqa1zbhsrdgaq3997e5kic.jpg" alt="" />
+                    <p>チョコバナナクレープ<br>ソフトクリームやさん</p>
+                </div>
+                <!-- 22 -->
+                <div class="food_item" data-name="pan">
+                    <img src="r_img/box_item/pan/g2rj6dq43806mn3cjgti89z3q7h10p.jpg" alt="" />
+                    <p>いちごジャム<br>ジャムおじさんのパン工場</p>
+                </div>
+                <!-- 23 -->
+                <div class="food_item" data-name="gohan">
+                    <img src="r_img/box_item/gohan/37fbe87woblaf316j3qm8p9c2iamri.jpg" alt="" />
+                    <p>アンパンマンのふっくら肉まん<br>ごはんやさん</p>
+                </div>
+                <!-- 24 -->
+                <div class="food_item" data-name="pan">
+                    <img src="r_img/box_item/pan/nbcsjifsuc30wvxlziuskhjtla1zkb.png" alt="" />
+                    <p>カレーパンマン<br>ジャムおじさんのパン工場</p>
+                </div>
+                <!-- 25 -->
+                <div class="food_item" data-name="soft">
+                    <img src="r_img/box_item/soft/8zu2ihkemxfhykh26u94jx92e8foiz.jpg" alt="" />
+                    <p>つぶつぶアイス<br>ソフトクリームやさん</p>
+                </div>
+                <!-- 26 -->
+                <div class="food_item" data-name="pan">
+                    <img src="r_img/box_item/pan/blu0njn5y9isjmv3wosd6rg1p9u736.jpg" alt="" />
+                    <p>アンパンマンとルルン<br>ジャムおじさんのパン工場</p>
+                </div>
+                <!-- 27 -->
+                <div class="food_item" data-name="gohan">
+                    <img src="r_img/box_item/gohan/m8vfry4298uzlj51fuoz0m6pez9l2o.jpg" alt="" />
+                    <p>焼きそば ランチボックス付<br>ごはんやさん</p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!--Ⓑショップ-->
+        <div class="shop">
+
+            <!--🌷ジャムおじさんのパン工場-->
+            <!-- ➄article -->
+            <article>
+                <h2>ジャムおじさんのパン工場</h2>
+                <!-- ➅content -->
+                <div class="content">
+
+                    <!-- ➆画像 -->
+                    <div class="picture">
+                        <img src="r_img/box1/ny00e73h5iv5ltp42k43r14pegs0qi.png">
+                        <img src="r_img/box1/65onwtje0zo595ioi5mlk6ttn6a6sa.jpg">
+                    </div>
+
+                    <!-- ➇メッセージ -->
+                    <div class="message">
+                        アンパンマンたちのキャラクターパンがずらり。<br>
+                        ジャムおじさんと同じように、ひとつひとつ心を込めて丁寧にパンを作り上げているよ。
+                        かわいいラテアートつきのカフェラテもおすすめ。
+                    </div>
+                </div>
+            </article>
+
+            <!--🌷ポップコーンやさん-->
+            <!-- ➄article -->
+            <article>
+                <h2>ポップコーンやさん</h2>
+                <!-- ➅content -->
+                <div class="content">
+
+                    <!-- ➆画像 -->
+                    <div class="picture">
+                        <img src="r_img/box2/0iwc88wpsne4srs39nltb6j1ectl7p.png">
+                        <img src="r_img/box2/0dg3u84q8n8atyvoka5ulnlr5p4ots.png">
+                    </div>
+
+                    <!-- ➇メッセージ -->
+                    <div class="message">
+                        できたてのポップコーンで、げんき100ばいにな～れ！<br>
+                        かわいいなかまたちのケースがいっぱいあって、どれにしようか迷っちゃうね。
+                    </div>
+                </div>
+            </article>
+
+            <!--🌷アンパンマンレストラン-->
+            <!-- ➄article -->
+            <article>
+                <h2>アンパンマンレストラン</h2>
+                <!-- ➅content -->
+                <div class="content">
+
+                    <!-- ➆画像 -->
+                    <div class="picture">
+                        <img src="r_img/box3/5xworrol41yg9x1v47qeule358hmpp.jpg">
+                        <img src="r_img/box3/1ixxuigkq80st4x1351kgecal9cvov.png">
+                    </div>
+
+                    <!-- ➇メッセージ -->
+                    <div class="message">
+                        バースデーをテーマにしたレストラン。<br>
+                        座席の事前予約ができる「プレミアムバースデープラン」と
+                        予約不要の「バースデーパック」が人気！<br>
+                        他にも家族で楽しめるメニューがいっぱい！
+                    </div>
+                </div>
+            </article>
+
+            <!--🌷ハンバーガーやさん-->
+            <!-- ➄article -->
+            <article>
+                <h2>ハンバーガーやさん</h2>
+                <!-- ➅content -->
+                <div class="content">
+
+                    <!-- ➆画像 -->
+                    <div class="picture">
+                        <img src="r_img/box4/7g4fhxyhrs88q3el3yblhs5e57sti3.png">
+                        <img src="r_img/box4/oemyusjc58wiqhq5yh2c70p75kjejg.png">
+                    </div>
+
+                    <!-- ➇メッセージ -->
+                    <div class="message">
+                        ボリュームも味も満足なハンバーガーが味わえるお店。<br>
+                        カレーやオムライスなど、見た目もかわいいキッズメニューは、うれしいおまけ付きだよ。
+                    </div>
+                </div>
+            </article>
+
+            <!--🌷うどんやさん-->
+            <!-- ➄article -->
+            <article>
+                <h2>うどんやさん</h2>
+                <!-- ➅content -->
+                <div class="content">
+
+                    <!-- ➆画像 -->
+                    <div class="picture">
+                        <img src="r_img/box5/kolfef0zeun3fatshrnyhwttiluvkv.png">
+                        <img src="r_img/box5/3buhyv23byi0qfrsthf9rgxavnp4u7.png">
+                    </div>
+
+                    <!-- ➇メッセージ -->
+                    <div class="message">
+                        香川から直送したうどんと、コクのある出汁にこだわったお店。
+                        お持ち帰りできるお子さまどんぶりは、アンパンマンこどもミュージアム限定だよ。
+                    </div>
+                </div>
+            </article>
+
+            <!--🌷ごはんやさん-->
+            <!-- ➄article -->
+            <article>
+                <h2>ごはんやさん</h2>
+                <!-- ➅content -->
+                <div class="content">
+
+                    <!-- ➆画像 -->
+                    <div class="picture">
+                        <img src="r_img/box6/wxl27vsc49prp3btt795bgx7eynhg2.png">
+                        <img src="r_img/box6/mmjh9zudgxjsr2letvnbgcdwet7umf.png">
+                    </div>
+
+                    <!-- ➇メッセージ -->
+                    <div class="message">
+                        小さなお子さまでも手軽に食べられるおむすびや丼がいっぱい。
+                        毎朝お店で作っているから、ふっくらおいしいよ！
+                        お持ち帰りできるスーベニアどんぶり付のガッツリ系メニューも！
+                    </div>
+                </div>
+            </article>
+
+            <!--🌷ソフトクリームやさん-->
+            <!-- ➄article -->
+            <article>
+                <h2>ソフトクリームやさん</h2>
+                <!-- ➅content -->
+                <div class="content">
+
+                    <!-- ➆画像 -->
+                    <div class="picture">
+                        <img src="r_img/box7/x54v42kky6z9lm632tj4ga3m2i54nb.jpg">
+                        <img src="r_img/box7/sd7oia4hdcj6p1g3me8rqyksqe4n3w.png">
+                    </div>
+
+                    <!-- ➇メッセージ -->
+                    <div class="message">
+                        ミルキー味のソフトクリームをテイクアウトできるお店だよ。
+                        食べた後にお持ち帰りできる、お得なスーベニアカップもあるよ。
+                    </div>
+                </div>
+            </article>
+            
+        </div>
+    </main>
+
+    <footer></footer>
+    
+    <script src="r_js/r_script.js"></script>
+</body>
+</html>

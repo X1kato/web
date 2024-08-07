@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>チケット・営業時間</title>
+    <link rel="stylesheet" href="t_css/t_style.css">
+</head>
+
+<body>
+
+    <!--➀ヘッダー-->
+    <header>チケット・営業時間</header>
+
+    <!--➁メニュー-->
+    <nav>
+        <!--ボタン-->
+        <div class="btn">
+            <i></i>
+            <i></i>
+            <i></i>
+        </div>
+
+        <!--メニュー中身-->
+        <div class="container">
+            <div class="item">
+                <ul>
+                    <li><a href="../ticket/t_index.html">チケット・営業時間</a></li>
+                    <li><a href="../access/a_index.html">アクセス</a></li>
+                    <li><a href="../../index.html">ホーム</a></li>
+                </ul>
+                <ul>
+                    <li><a href="../restaurant/r_index.html">レストラン</a></li>
+                    <li><a href="../goods/g_index.html">グッズ</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!--➂チケット料金・営業時間-->
+    <div class="information">
+        
+        <!-- ➃チケット料金 -->
+        <div class="ticket_fee">
+
+            <!-- ➅タイトル -->
+            <div class="information_title">
+                <p>&emsp;チケット料金</p>
+            </div>
+
+            <!-- ➆内容 -->
+            <div class="information_content">
+                <p>&emsp;大人：2,500円&emsp; &emsp;子供：2,000円（12才まで）</p>    
+            </div>
+
+        </div>    
+
+        <!-- ➄営業時間 -->
+        <div class="opening_hours">
+
+            <!-- ➅タイトル -->
+            <div class="information_title">
+                <p>&emsp;営業時間</p>
+            </div>
+
+            <!-- ➆内容 -->
+            <div class="information_content">
+                <p>&emsp;10:00～17:00</p> 
+            </div>
+            
+        </div>
+    </div>
+
+
+    <!--➇チケット購入-->
+    <div class="purchase_ticket">
+
+        <!--➈チケット購入タイトル-->
+        <div class="purchase_ticket_title">＜チケット購入＞</div>
+
+        <!--➉送信フォーム-->
+        <!--🌼action属性（送信後の遷移場所）-->
+        <form action="/get_ticket" method="post">
+
+            <div class="input_items">
+                <p>姓（かな）&emsp;</p>
+                <input type="text" name="LastName">
+            </div>
+
+            <div class="input_items">
+                <p>名（かな）&emsp;</p>
+                <input type="text" name="FirstName">
+            </div>
+            
+            <div class="input_items">
+                <p>生年月日&emsp;</p>
+                <input type="date" name="Birthday">
+            </div>
+
+            <div class="input_items">
+                <p>電話番号&emsp;</p>
+                <input type="tel" name="TelNumber">
+            </div>
+
+            <div class="input_items">
+                <p>メールアドレス&emsp;</p>
+                <input type="email" name="Email">
+            </div>
+
+            <div class="input_items">
+                <p>ご来園日&emsp;</p>
+                <input type="date" name="AppointmentDate">
+            </div>
+            
+            <div class="input_items">
+                <p>チケット購入枚数 大人&emsp;</p>
+                <input type="number" name="AdultTicket"><span>枚</span>
+            </div>
+
+            <div class="input_items">
+                <p>チケット購入枚数 子供&emsp;</p>
+                <input type="number" name="ChildTicket"><span>枚</span>
+            </div>
+
+            <div class="input_items">
+                <input class="registration" type="submit" value="登録">
+            </div>
+        </form>
+    </div>
+
+    <footer></footer>
+    
+
+    <script src="t_js/t_script.js"></script>
+</body>
+

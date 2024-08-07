@@ -1,0 +1,220 @@
+*{
+    margin: 0;
+    padding: 0;
+    /*🌼要素のwidthとheightにpaddingやborderのサイズが含まれる*/
+    box-sizing: border-box;
+    font-weight: bold;
+    color: #2d2d2d;
+}
+
+/*➀ヘッダー*/
+header{
+    font-size: 3vw;
+    width: 100%;
+    background: #48D1CC;
+    color: white;
+    height: 100px;
+    line-height: 100px;
+    padding-left: 3vw;
+}
+
+/*➁メニュー*/
+/*ボタン*/
+.btn{
+    position: fixed;
+    top: 10px;
+    right: 20px;
+    height: 80px;
+    width: 80px;
+    background-color: #FFFF99;
+    z-index: 10;
+    border: 4px solid #FF4F50;
+    border-radius: 50%;
+}
+
+.btn i{
+    position: absolute;
+    left: 13px;
+    height: 6px;
+    width: 45px;
+    background: #FF4F50;
+    border-radius: 15%;
+    /*🌼アニメーションの速度*/
+    /*🌼.5s = 0.5秒*/
+    transition: .5s;
+}
+
+.btn i:nth-of-type(1){
+    top: 19px;
+}
+
+.btn i:nth-of-type(2){
+    top:33px;
+}
+
+.btn i:nth-of-type(3){
+    top:47px;
+}
+
+/*🌟ボタン　active*/
+.btn.active i:nth-of-type(1){
+                /*🌼下に14px*/
+    transform: translateY(14px)rotate(45deg);
+}
+
+.btn.active i:nth-of-type(2){
+    opacity: 0;
+}
+
+.btn.active i:nth-of-type(3){
+                 /*🌼上に14px*/
+    transform: translateY(-14px)rotate(-45deg);
+}
+
+
+/*メニュー中身*/
+.container{
+    position: fixed;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #e6f5f5;
+    z-index: 9;
+    opacity: 0;
+    /*🌼マウスイベントをキャンセル*/
+    pointer-events: none;
+    /*🌼アニメーションの速度*/
+    /*🌼.5s = 0.5秒*/
+    transition: .5s;
+}
+
+.item{
+   /*🌼子要素を横並びにする*/
+   display: flex;
+   width: 650px;
+   margin: 130px auto; 
+   font-size: 25px;
+}
+
+.item ul li{
+    margin: 30px;
+    /*🌼点を消す*/
+    list-style: none;
+    padding-bottom: 10px;
+}
+
+.item ul li a{
+    color: #222222;
+    /*🌼線を消す*/
+    text-decoration: none;
+}
+
+/*🌟メニュー中身　active*/
+.container.active{
+    opacity: 1;
+    /*🌼マウスイベントをオン*/
+    pointer-events: auto;
+}
+
+/*➂選択ボタン*/
+.choice{
+    /*🌼子要素を横並びにする*/
+    display: flex;
+    margin-top: 60px;
+    /*🌼要素を中央揃え*/
+    justify-content: center;
+}
+
+.button{
+    max-width: 100%;
+    width: 20%;
+    border: 2px solid #FFB6C1;
+    text-align: center;
+}
+
+
+/* ➂チケット料金・営業時間 */
+.information{
+    width: 80%;
+    margin: 50px auto;
+    font-size: 1.4vw;
+}
+
+/* ➃チケット料金 */
+.ticket_fee{
+    /* 🌼子要素を横並びにする */
+    display: flex;
+    border: solid 2px rgb(32, 99, 199);
+    height: 40px;
+    line-height: 40px;
+}
+
+/* ➄営業時間 */
+.opening_hours{
+    /* 🌼子要素を横並びにする */
+    display: flex;
+    border: solid rgb(32, 99, 199);
+    border-width:0px 2px 2px 2px;
+    height: 40px;
+    line-height: 40px;
+}
+
+/* ➅タイトル */
+.information_title{
+    background-color: rgb(216, 236, 247);
+    width: 50%;
+}
+
+/* ➆内容 */
+.information_content{
+    background-color: white;
+    width: 50%;
+}
+
+
+/* ➇チケット購入 */
+.purchase_ticket{
+    width: 80%;
+    background-color: bisque;
+    border-radius: 9px;
+    margin: auto;
+    padding: 20px 0;
+}
+
+
+/* ➈チケット購入タイトル */
+.purchase_ticket_title{
+    width: 20%;
+    margin: auto;
+    font-size: 1.7vw;
+}
+
+
+/* ➉送信フォーム */
+form{
+    width: 60%;
+    margin: 20px auto;
+    font-size: 1.3vw;
+}
+
+.input_items{
+    /* 🌼子要素を横並びにする */
+    display: flex;
+    margin: 20px;
+}
+
+/* 登録ボタン */
+.registration{
+    padding: 2px 20px;
+    border-radius: 5px;
+    /* 🌼要素にマウスを乗せたときに、カーソルがポインターに変化 */
+    cursor: pointer;
+}
+
+/* フッター */
+footer{
+    margin-top: 50px;
+    height: 40px;
+    background-color: #48D1CC;
+}

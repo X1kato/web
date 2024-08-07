@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>グッズ・ショップ</title>
+    <link rel="stylesheet" href="g_css/g_style.css">
+</head>
+<body>
+    <!--➀ヘッダー-->
+    <header>グッズ・ショップ</header>
+
+    <!--➁メニュー-->
+    <nav>
+        <!--ボタン-->
+        <div class="btn">
+            <i></i>
+            <i></i>
+            <i></i>
+        </div>
+
+        <!--メニュー中身-->
+        <div class="container">
+            <div class="item">
+                <ul>
+                    <li><a href="../ticket/t_index.html">チケット・営業時間</a></li>
+                    <li><a href="../access/a_index.html">アクセス</a></li>
+                    <li><a href="../../index.html">ホーム</a></li>
+                </ul>
+                <ul>
+                    <li><a href="../restaurant/r_index.html">レストラン</a></li>
+                    <li><a href="../goods/g_index.html">グッズ</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--➂選択ボタン-->
+    <div class="choice">
+
+        <!--Ⓐグッズボタン-->
+        <div class="button" id="goods_btn">グッズ</div>
+
+        <!--Ⓑショップボタン-->
+        <div class="button" id="shop_btn">ショップ</div>
+
+    </div>
+
+    <!--➃メイン-->
+    <main>
+
+        <!--Ⓐグッズ-->
+        <div class="goods">
+
+            <!-- ➈グッズボタン枠 -->
+            <div class="goods_buttons">
+                <!-- ➉グッズボタン単体 -->
+                <button class="goods_button goods_active" data-name="all">全て</button>
+                <button class="goods_button" data-name="terrace">アンパンマンテラス</button>
+                <button class="goods_button" data-name="batako">バタコさんの手づくりハウス</button>
+                <button class="goods_button" data-name="dokinchan">ドキンちゃんのドキドキおしゃれショップ</button>
+                <button class="goods_button" data-name="book_shop">もりのほんやさん</button>
+                <button class="goods_button" data-name="photo_shop">アンパンマンにこにこ写真館</button>
+                <button class="goods_button" data-name="clothes">アンパンマンキッズコレクション</button>
+            </div>
+
+              <!-- (11)グッズアイテム枠 -->
+              <div class="goods_items">
+
+                <!-- (12)グッズアイテム -->
+                <!-- 1 -->
+                <div class="goods_item" data-name="terrace">
+                  <img src="g_img/box_item/terrace/cewtvwh6tuo6jto1bmdvyxnp0t9cdr.jpg" alt="" />
+                  <p>ぬいぐるみカチューシャ<br>アンパンマンテラス</p>
+                </div>
+                <!-- 2 -->
+                <div class="goods_item" data-name="dokinchan">
+                    <img src="g_img/box_item/dokinchan/41kruoahgrvpnyr159554h8jqc69tv.jpg" alt="" />
+                    <p>オーロラチャームネックレス<br>ドキンちゃんのドキドキおしゃれショップ</p>
+                </div>
+                <!-- 3 -->
+                <div class="goods_item" data-name="batako">
+                    <img src="g_img/box_item/batako/ui6b8k2iwzel0c1ae9usea0by0ghfs.jpg" alt="" />
+                    <p>オリジナルチャームを作ろう<br>バタコさんの手づくりハウス</p>
+                </div>
+                <!-- 4 -->
+                <div class="goods_item" data-name="book_shop">
+                    <img src="g_img/box_item/book_shop/jqvp5q4i2ujzg8x17nfg9eiboityib.jpg" alt="" />
+                  <p>アンパンマンミニブックス<br>もりのほんやさん</p>
+                </div>
+                <!-- 5 -->
+                <div class="goods_item" data-name="photo_shop">
+                    <img src="g_img/box_item/photo_shop/pawsmbr97ip69akefxbe9xfom1athz.jpg" alt="" />
+                  <p>2L判サイズ記念写真 <br>アンパンマンにこにこ写真館</p>
+                </div>
+                <!-- 6 -->
+                <div class="goods_item" data-name="clothes">
+                    <img src="g_img/box_item/clothes/hbs03lfecte3t6c1ech0qxfl7zp6wn.jpg" alt="" />
+                  <p>うきうきカラフルソックス<br>アンパンマンキッズコレクション</p>
+                </div>
+                <!-- 7 -->
+                <div class="goods_item" data-name="terrace">
+                    <img src="g_img/box_item/terrace/pnya2eelb2m1otnrr8bynk1ltpwgqv.jpg" alt="" />
+                    <p>ポーズがとれるよ！アンパンマン<br>アンパンマンテラス</p>
+                </div>
+                <!-- 8 -->
+                <div class="goods_item" data-name="dokinchan">
+                    <img src="g_img/box_item/dokinchan/6jrwu0461hgdjco838y70s102jgxwq.jpg" alt="" />
+                    <p>ANPANMAN CHARACTERS リュック<br>ドキンちゃんのドキドキおしゃれショップ</p>
+                </div>
+                <!-- 9 -->
+                <div class="goods_item" data-name="batako">
+                    <img src="g_img/box_item/batako/oad9bc4r19j5xeudnfnx6ihc7vaz7i.png" alt="" />
+                    <p>お名前メタルストラップ<br>バタコさんの手づくりハウス</p>
+                </div>
+                <!-- 10 -->
+                <div class="goods_item" data-name="book_shop">
+                    <img src="g_img/box_item/book_shop/wqn44e0b3r891nfzvgegiyxey9n9gg.png" alt="" />
+                  <p>アンパンマン大図鑑<br>もりのほんやさん</p>
+                </div>
+                <!-- 11 -->
+                <div class="goods_item" data-name="photo_shop">
+                    <img src="g_img/box_item/photo_shop/8za8wffeycdsowxjjhlgt53sbtp88b.jpg" alt="" />
+                  <p>にこにこフォトマスコット<br>アンパンマンにこにこ写真館</p>
+                </div>
+                <!-- 12 -->
+                <div class="goods_item" data-name="clothes">
+                    <img src="g_img/box_item/clothes/ws8543devoy5014ls8y86ojekh5hg5.jpg" alt="" />
+                  <p>うきうきカラフル総柄Tシャツ<br>アンパンマンキッズコレクション</p>
+                </div>
+                <!-- 13 -->
+                <div class="goods_item" data-name="terrace">
+                    <img src="g_img/box_item/terrace/7gekbyydrtmmqqkb6yh0a3x7uwe7x0.jpg" alt="" />
+                    <p>NEWきぐるみキャップ<br>アンパンマンテラス</p>
+                </div>
+                <!-- 14 -->
+                <div class="goods_item" data-name="dokinchan">
+                    <img src="g_img/box_item/dokinchan/apdaucqxrl7odqaix364grs0g9n9w9.jpg" alt="" />
+                    <p>ラバーサングラス<br>ドキンちゃんのドキドキおしゃれショップ</p>
+                </div>
+                <!-- 15 -->
+                <div class="goods_item" data-name="batako">
+                    <img src="g_img/box_item/batako/nc485l9dpx3fc571b0xisbu2wuwxzv.jpg" alt="" />
+                    <p>おなまえラベル<br>バタコさんの手づくりハウス</p>
+                </div>
+                <!-- 16 -->
+                <div class="goods_item" data-name="book_shop">
+                    <img src="g_img/box_item/book_shop/y9xd1ga2fy3kjm1jyxo7tb48tqaytb.jpg" alt="" />
+                    <p>ジクリー版画<br>もりのほんやさん</p>
+                </div>
+                <!-- 17 -->
+                <div class="goods_item" data-name="photo_shop">
+                    <img src="g_img/box_item/photo_shop/i8inipbncv2tcnkxb3hddi9pe6jb3u.png" alt="" />
+                    <p>選べる！おトクな4点セット <br>アンパンマンにこにこ写真館</p>
+                </div>
+                <!-- 18 -->
+                <div class="goods_item" data-name="clothes">
+                    <img src="g_img/box_item/clothes/g60kmnlcru520magfc9jiv5ij2xf7r.jpg" alt="" />
+                    <p>うきうきカラフルトート<br>アンパンマンキッズコレクション</p>
+                </div>
+                <!-- 19 -->
+                <div class="goods_item" data-name="terrace">
+                    <img src="g_img/box_item/terrace/245x1vt7y09u1wrice20nsk2fhmtbc.png" alt="" />
+                    <p>しゃぼんだまステッキ<br>アンパンマンテラス</p>
+                </div>
+                <!-- 20 -->
+                <div class="goods_item" data-name="dokinchan">
+                    <img src="g_img/box_item/dokinchan/mm0kw93p8bo11i32x1aax8qnqcrvye.jpg" alt="" />
+                    <p>ジュエリーボックス<br>ドキンちゃんのドキドキおしゃれショップ</p>
+                </div>
+                <!-- 21 -->
+                <div class="goods_item" data-name="batako">
+                    <img src="g_img/box_item/batako/xazvqy4pb6c1rbmpy2upvlitlryhm2.jpg" alt="" />
+                    <p>シールワッペンセット<br>バタコさんの手づくりハウス</p>
+                </div>
+                <!-- 22 -->
+                <div class="goods_item" data-name="book_shop">
+                    <img src="g_img/box_item/book_shop/81vtoe6cj3kg06sqivur5hphgtgh13.jpg" alt="" />
+                    <p>アンパンマンエコバッグ<br>もりのほんやさん</p>
+                </div>
+                <!-- 23 -->
+                <div class="goods_item" data-name="photo_shop">
+                    <img src="g_img/box_item/photo_shop/kgid0cwwdh1epy9kq6e7ajexdaz566.jpg" alt="" />
+                    <p>にこにこフォトホルダー <br>アンパンマンにこにこ写真館</p>
+                </div>
+                <!-- 24 -->
+                <div class="goods_item" data-name="clothes">
+                    <img src="g_img/box_item/clothes/ei1l67ekty9hohapluz6iyixbl5ux8.jpg" alt="" />
+                    <p>リバーシブルハット<br>アンパンマンキッズコレクション</p>
+                </div>
+                <!-- 25 -->
+                <div class="goods_item" data-name="terrace">
+                    <img src="g_img/box_item/terrace/nkn3hxaoda3nftulf6gz5v3ba37n5p.jpg" alt="" />
+                    <p>ミニポーチ<br>アンパンマンテラス</p>
+                </div>
+                <!-- 26 -->
+                <div class="goods_item" data-name="dokinchan">
+                    <img src="g_img/box_item/dokinchan/e1rjoyodu543mui9rfnfmsafdsbc9d.jpg" alt="" />
+                    <p>オーロラリボンポニー<br>ドキンちゃんのドキドキおしゃれショップ</p>
+                </div>
+                <!-- 27 -->
+                <div class="goods_item" data-name="batako">
+                    <img src="g_img/box_item/batako/iekdewlurt37jkz4f649j8w5mc8hel.jpg" alt="" />
+                    <p>オリジナルリュックをつくろう！<br>バタコさんの手づくりハウス</p>
+                </div>
+                <!-- 28 -->
+                <div class="goods_item" data-name="clothes">
+                    <img src="g_img/box_item/clothes/i5i3gl5jgn7rx3vz34s3ud2wqac43r.jpg" alt="" />
+                    <p>ひんやりクールブランケット<br>アンパンマンキッズコレクション</p>
+                </div>
+
+              </div>
+        </div>
+
+        <!--Ⓑショップ-->
+        <div class="shop">
+
+            <!--🌷アンパンマンテラス／アンパンマンフレンズ-->
+            <!-- ➄article -->
+            <article>
+                <h2>アンパンマンテラス／アンパンマンフレンズ</h2>
+                <!-- ➅content -->
+                <div class="content">
+
+                    <!-- ➆画像 -->
+                    <div class="picture">
+                        <img src="g_img/box1/gp5kcum9et5jskavlgrjptlzzgqdznk.png">
+                        <img src="g_img/box1/s4pbpz61ajqjzt0myqb5dsgm78v88lb.png">
+                    </div>
+
+                    <!-- ➇メッセージ -->
+                    <div class="message">
+                        お菓子や文具、プレゼントにお勧めの雑貨や</br>おもちゃまで、アンパンマングッズが勢ぞろいのお店。</br>
+                        お土産に迷ったら、まずはこのお店をのぞいてみよう！
+                    </div>
+                </div>
+            </article>
+
+            <!--🌷バタコさんの手づくりハウス-->
+            <!-- ➄article -->
+            <article>
+                <h2>バタコさんの手づくりハウス</h2>
+                <!-- ➅content -->
+                <div class="content">
+
+                    <!-- ➆画像 -->
+                    <div class="picture">
+                        <img src="g_img/box2/gjbphzwyyym8t83bq1pkij751189v6x.png">
+                        <img src="g_img/box2/sxlt8qawzpnp66e80p80q7w2p3rriqd.png">
+                    </div>
+
+                    <!-- ➇メッセージ -->
+                    <div class="message">
+                        店内には手芸用品やクラフトグッズがいっぱい！</br>
+                        バッグやタオルにワッペンをつけて自分だけのオリジナルを作ろう！
+                        お名前刺しゅうのサービスも行っているよ。
+                    </div>
+                </div>
+            </article>
+
+            <!--🌷ドキンちゃんのドキドキおしゃれショップ-->
+            <!-- ➄article -->
+            <article>
+                <h2>ドキンちゃんのドキドキおしゃれショップ</h2>
+                <!-- ➅content -->
+                <div class="content">
+
+                    <!-- ➆画像 -->
+                    <div class="picture">
+                        <img src="g_img/box3/gi66zx8v408y7wmgw56q9v9dn63q3tf.png">
+                        <img src="g_img/box3/sx1ad6638h9slfbw3x6zx864txrol6d.png">
+                    </div>
+
+                    <!-- ➇メッセージ -->
+                    <div class="message">
+                        ドキンちゃんを中心としたアンパンマンとなかまたちの</br>キュートなグッズがズラリ。</br>
+                        ポーチやバッグ、アクセサリーなど、ママとおそろいで持つのもオススメだよ。
+                    </div>
+                </div>
+            </article>
+
+            <!--🌷もりのほんやさん-->
+            <!-- ➄article -->
+            <article>
+                <h2>もりのほんやさん</h2>
+                <!-- ➅content -->
+                <div class="content">
+
+                    <!-- ➆画像 -->
+                    <div class="picture">
+                        <img src="g_img/box4/g6vm07pnhyug2x9ahv9sku5hbc003fj.png">
+                        <img src="g_img/box4/szslzpcpylys9opirc9jkkotit1jy35.png">
+                    </div>
+
+                    <!-- ➇メッセージ -->
+                    <div class="message">
+                        一般書店では買えない限定絵本や、</br>やなせたかし先生のジクリー版画もあるよ。</br>
+                        家族で遊べるカードゲームやお出かけに便利なエコバッグも大人気！
+                    </div>
+                </div>
+            </article>
+
+            <!--🌷アンパンマンにこにこ写真館-->
+            <!-- ➄article -->
+            <article>
+                <h2>アンパンマンにこにこ写真館</h2>
+                <!-- ➅content -->
+                <div class="content">
+
+                    <!-- ➆画像 -->
+                    <div class="picture">
+                        <img src="g_img/box5/spxfl818qbq0j7e35igrqpr3j7p5flb.jpg">
+                        <img src="g_img/box5/s8dyldq0p9xr8ie84q9isz3a2dbpz1a.png">
+                    </div>
+
+                    <!-- ➇メッセージ -->
+                    <div class="message">
+                        アンパンマンのかわいいフォトスタジオで、</br>記念撮影をしよう！</br>
+                        キッズの撮影に慣れたスタッフだから、素敵な笑顔の写真が持ち帰れるよ。
+                    </div>
+                </div>
+            </article>
+
+            <!--🌷アンパンマンカーニバル王国-->
+            <!-- ➄article -->
+            <article>
+                <h2>アンパンマンカーニバル王国</h2>
+                <!-- ➅content -->
+                <div class="content">
+
+                    <!-- ➆画像 -->
+                    <div class="picture">
+                        <img src="g_img/box6/gvrxbkcajblwsugk3zsyhtttlkvsad3.png">
+                        <img src="g_img/box6/smqjlkz5vw1e5ew8q6nd3qovck3lhoa.jpg">
+                    </div>
+
+                    <!-- ➇メッセージ -->
+                    <div class="message">
+                        カーニバルゲームにガラポン、乗り物など、ワクワクするあそびがいっぱい。
+                        おねえさんたちが応援してくれるから、小さなお子さまもげんき100ばい！楽しめるよ。
+                    </div>
+                </div>
+            </article>
+
+            <!--🌷アンパンマンキッズコレクション-->
+            <!-- ➄article -->
+            <article>
+                <h2>アンパンマンキッズコレクション</h2>
+                <!-- ➅content -->
+                <div class="content">
+
+                    <!-- ➆画像 -->
+                    <div class="picture">
+                        <img src="g_img/box7/gjjurfg4ydz76pz7vo9map5250rvgxc.png">
+                        <img src="g_img/box7/sudztedi78bw6ufnk6vyk840olwji2y.png">
+                    </div>
+
+                    <!-- ➇メッセージ -->
+                    <div class="message">
+                        アンパンマンの楽しい世界と、オシャレを融合させた子供服ブランド。
+                        ベビー、キッズのほか、大人サイズもあるので、親子でアンパンマンコーデを楽しめるよ。
+                    </div>
+                </div>
+            </article>
+            
+        </div>
+
+
+    </main>
+
+    <footer></footer>
+
+    <script src="g_js/g_script.js"></script>
+</body>
+</html>
