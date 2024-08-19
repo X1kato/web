@@ -6,7 +6,7 @@
 const btn = document.querySelector('.btn');
 const container = document.querySelector('.container');
     
-//🌼btn.classList.toggle('active');
+//btn.classList.toggle('active');
 //btnにactiveが付いていなければ付ける。付いていれば外す。
     
 btn.addEventListener('click' ,function(){
@@ -47,25 +47,25 @@ const items = document.querySelectorAll(".goods_item");
 
 // ボタン
 const filterContent = (e) => {
-  // 🌼class="goods_active" が付いているものを探し、"goods_active"　を外す
+  // class="goods_active" が付いているものを探し、"goods_active"　を外す
   document.querySelector(".goods_active").classList.remove("goods_active");
-  // 🌼e.target(クリックしたもの)に "goods_active" を追加
+  // e.target(クリックしたもの)に "goods_active" を追加
   e.target.classList.add("goods_active");
 
   // 画像
   items.forEach((item) => {
-    // 🌼class="hide"を追加
+    // class="hide"を追加
     item.classList.add("hide");
 
-    // 🌼e.target.dataset.name = クリックしたデータ属性の名前
+    // e.target.dataset.name = クリックしたデータ属性の名前
     if (item.dataset.name === e.target.dataset.name || e.target.dataset.name === "all"){
-      // 🌼class="hide"を外す
+      // class="hide"を外す
       item.classList.remove("hide");
     }
   });
 };
 
-// 🌼filterContent をクリックした時に処理
+// filterContent をクリックした時に処理
 buttons.forEach((data) => data.addEventListener("click", filterContent));
 
 
