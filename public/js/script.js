@@ -28,7 +28,7 @@ const page = document.getElementById('page');
 //次へ
 const next =document.getElementById('next');
 
-//★配列の番号
+//配列の番号
 let current = 0;
 
 //ページの母数
