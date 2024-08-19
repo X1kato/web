@@ -180,7 +180,7 @@ main{
 /*Ⓐごはん中身　active*/
 .food.active{
     opacity: 0;
-    /*🌼マウスイベントをキャンセル*/
+    /*マウスイベントをキャンセル*/
     pointer-events: none;
 }
 
