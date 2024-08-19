@@ -6,7 +6,7 @@
 const btn = document.querySelector('.btn');
 const container = document.querySelector('.container');
     
-//🌼btn.classList.toggle('active');
+//btn.classList.toggle('active');
 //btnにactiveが付いていなければ付ける。付いていれば外す。
     
 btn.addEventListener('click' ,function(){
@@ -38,7 +38,7 @@ page.textContent = `1/${images.length}`;
 next.addEventListener('click',function(){
     if(current + 1 < images.length){
         current ++;
-        //🌼定数：slideImgのsrc属性に、imagesの配列のcurrent番目を代入する
+        //定数：slideImgのsrc属性に、imagesの配列のcurrent番目を代入する
         slideImg.src = images[current];
     }
     page.textContent = `${current + 1}/${images.length}`;
@@ -60,14 +60,14 @@ prev.addEventListener('click',function(){
 const main1 = document.getElementById('main1');
 const thumb1 = document.querySelectorAll('.thumb-img1');
 
-//🌼thumb1を1つずつ取り出して引数(thumbnail1)に代入し、中の処理を行わせる。
+//thumb1を1つずつ取り出して引数(thumbnail1)に代入し、中の処理を行わせる。
 thumb1.forEach(function(thumbnail1) {
 
     thumbnail1.addEventListener('click', function() {
 
-        //🌼thumbnail1.getAttribute('属性名')　thumbnail1内の属性を取得する
+        //thumbnail1.getAttribute('属性名')　thumbnail1内の属性を取得する
         let src1 = thumbnail1.getAttribute('src');
-        //🌼main1のsrc属性を変数(src1)に代入
+        //main1のsrc属性を変数(src1)に代入
         main1.src = src1;
     });
  });
@@ -80,7 +80,7 @@ window.addEventListener('load', function(event) {
     document.getElementById('main_list1').addEventListener('click',  function() {
 
         const scroll_1 = document.getElementById('scroll_1');
-        //🌼特定の要素までスクロールする
+        //特定の要素までスクロールする
         scroll_1.scrollIntoView();
     });
 });
@@ -93,7 +93,7 @@ window.addEventListener('load', function(event) {
     document.getElementById('return_mp1').addEventListener('click', function() {
         
         const map = document.getElementById('map');
-        //🌼特定の要素までスクロールする
+        //特定の要素までスクロールする
         map.scrollIntoView();
     });
 });
@@ -104,14 +104,14 @@ window.addEventListener('load', function(event) {
 const main2 = document.getElementById('main2');
 const thumb2 = document.querySelectorAll('.thumb-img2');
 
-//🌼thumb1を1つずつ取り出して引数(thumbnail1)に代入し、中の処理を行わせる。
+//thumb1を1つずつ取り出して引数(thumbnail1)に代入し、中の処理を行わせる。
 thumb2.forEach(function(thumbnail2) {
 
     thumbnail2.addEventListener('click', function() {
 
-        //🌼thumbnail1.getAttribute('属性名')　thumbnail1内の属性を取得する
+        //thumbnail1.getAttribute('属性名')　thumbnail1内の属性を取得する
         let src2 = thumbnail2.getAttribute('src');
-        //🌼main1のsrc属性を変数(src1)に代入
+        //main1のsrc属性を変数(src1)に代入
         main2.src = src2;
     });
  });
@@ -123,7 +123,7 @@ window.addEventListener('load', function(event) {
     document.getElementById('main_list2').addEventListener('click',  function() {
 
         const scroll_2 = document.getElementById('scroll_2');
-        //🌼特定の要素までスクロールする
+        //特定の要素までスクロールする
         scroll_2.scrollIntoView();
     });
 });
@@ -136,7 +136,7 @@ window.addEventListener('load', function(event) {
     document.getElementById('return_mp2').addEventListener('click', function() {
         
         const map = document.getElementById('map');
-        //🌼特定の要素までスクロールする
+        //特定の要素までスクロールする
         map.scrollIntoView();
     });
 });
@@ -147,14 +147,14 @@ window.addEventListener('load', function(event) {
 const main3 = document.getElementById('main3');
 const thumb3 = document.querySelectorAll('.thumb-img3');
 
-//🌼thumb1を1つずつ取り出して引数(thumbnail1)に代入し、中の処理を行わせる。
+//thumb1を1つずつ取り出して引数(thumbnail1)に代入し、中の処理を行わせる。
 thumb3.forEach(function(thumbnail3) {
 
     thumbnail3.addEventListener('click', function() {
 
-        //🌼thumbnail1.getAttribute('属性名')　thumbnail1内の属性を取得する
+        //thumbnail1.getAttribute('属性名')　thumbnail1内の属性を取得する
         let src3 = thumbnail3.getAttribute('src');
-        //🌼main1のsrc属性を変数(src1)に代入
+        //main1のsrc属性を変数(src1)に代入
         main3.src = src3;
     });
  });
@@ -167,7 +167,7 @@ window.addEventListener('load', function(event) {
     document.getElementById('main_list3').addEventListener('click',  function() {
 
         const scroll_3 = document.getElementById('scroll_3');
-        //🌼特定の要素までスクロールする
+        //特定の要素までスクロールする
         scroll_3.scrollIntoView();
     });
 });
@@ -180,7 +180,7 @@ window.addEventListener('load', function(event) {
     document.getElementById('return_mp3').addEventListener('click', function() {
         
         const map = document.getElementById('map');
-        //🌼特定の要素までスクロールする
+        //特定の要素までスクロールする
         map.scrollIntoView();
     });
 });
@@ -192,14 +192,14 @@ window.addEventListener('load', function(event) {
 const main4 = document.getElementById('main4');
 const thumb4 = document.querySelectorAll('.thumb-img4');
 
-//🌼thumb1を1つずつ取り出して引数(thumbnail1)に代入し、中の処理を行わせる。
+//thumb1を1つずつ取り出して引数(thumbnail1)に代入し、中の処理を行わせる。
 thumb4.forEach(function(thumbnail4) {
 
     thumbnail4.addEventListener('click', function() {
 
-        //🌼thumbnail1.getAttribute('属性名')　thumbnail1内の属性を取得する
+        //thumbnail1.getAttribute('属性名')　thumbnail1内の属性を取得する
         let src4 = thumbnail4.getAttribute('src');
-        //🌼main1のsrc属性を変数(src1)に代入
+        //main1のsrc属性を変数(src1)に代入
         main4.src = src4;
     });
  });
@@ -212,7 +212,7 @@ window.addEventListener('load', function(event) {
     document.getElementById('main_list4').addEventListener('click',  function() {
 
         const scroll_4 = document.getElementById('scroll_4');
-        //🌼特定の要素までスクロールする
+        //特定の要素までスクロールする
         scroll_4.scrollIntoView();
     });
 });
@@ -225,7 +225,7 @@ window.addEventListener('load', function(event) {
     document.getElementById('return_mp4').addEventListener('click', function() {
         
         const map = document.getElementById('map');
-        //🌼特定の要素までスクロールする
+        //特定の要素までスクロールする
         map.scrollIntoView();
     });
 });
@@ -237,14 +237,14 @@ window.addEventListener('load', function(event) {
 const main5 = document.getElementById('main5');
 const thumb5 = document.querySelectorAll('.thumb-img5');
 
-//🌼thumb1を1つずつ取り出して引数(thumbnail1)に代入し、中の処理を行わせる。
+//thumb1を1つずつ取り出して引数(thumbnail1)に代入し、中の処理を行わせる。
 thumb5.forEach(function(thumbnail5) {
 
     thumbnail5.addEventListener('click', function() {
 
-        //🌼thumbnail1.getAttribute('属性名')　thumbnail1内の属性を取得する
+        //thumbnail1.getAttribute('属性名')　thumbnail1内の属性を取得する
         let src5 = thumbnail5.getAttribute('src');
-        //🌼main1のsrc属性を変数(src1)に代入
+        //main1のsrc属性を変数(src1)に代入
         main5.src = src5;
     });
  });
@@ -257,7 +257,7 @@ window.addEventListener('load', function(event) {
     document.getElementById('main_list5').addEventListener('click',  function() {
 
         const scroll_5 = document.getElementById('scroll_5');
-        //🌼特定の要素までスクロールする
+        //特定の要素までスクロールする
         scroll_5.scrollIntoView();
     });
 });
@@ -270,7 +270,7 @@ window.addEventListener('load', function(event) {
     document.getElementById('return_mp5').addEventListener('click', function() {
         
         const map = document.getElementById('map');
-        //🌼特定の要素までスクロールする
+        //特定の要素までスクロールする
         map.scrollIntoView();
     });
 }); 
@@ -281,14 +281,14 @@ window.addEventListener('load', function(event) {
 const main6 = document.getElementById('main6');
 const thumb6 = document.querySelectorAll('.thumb-img6');
 
-//🌼thumb1を1つずつ取り出して引数(thumbnail1)に代入し、中の処理を行わせる。
+//thumb1を1つずつ取り出して引数(thumbnail1)に代入し、中の処理を行わせる。
 thumb6.forEach(function(thumbnail6) {
 
     thumbnail6.addEventListener('click', function() {
 
-        //🌼thumbnail1.getAttribute('属性名')　thumbnail1内の属性を取得する
+        //thumbnail1.getAttribute('属性名')　thumbnail1内の属性を取得する
         let src6 = thumbnail6.getAttribute('src');
-        //🌼main1のsrc属性を変数(src1)に代入
+        //main1のsrc属性を変数(src1)に代入
         main6.src = src6;
     });
  });
@@ -300,7 +300,7 @@ window.addEventListener('load', function(event) {
     document.getElementById('main_list6').addEventListener('click',  function() {
 
         const scroll_6 = document.getElementById('scroll_6');
-        //🌼特定の要素までスクロールする
+        //特定の要素までスクロールする
         scroll_6.scrollIntoView();
     });
 });
@@ -313,7 +313,7 @@ window.addEventListener('load', function(event) {
     document.getElementById('return_mp6').addEventListener('click', function() {
         
         const map = document.getElementById('map');
-        //🌼特定の要素までスクロールする
+        //特定の要素までスクロールする
         map.scrollIntoView();
     });
 }); 
@@ -325,14 +325,14 @@ window.addEventListener('load', function(event) {
 const main7 = document.getElementById('main7');
 const thumb7 = document.querySelectorAll('.thumb-img7');
 
-//🌼thumb1を1つずつ取り出して引数(thumbnail1)に代入し、中の処理を行わせる。
+//thumb1を1つずつ取り出して引数(thumbnail1)に代入し、中の処理を行わせる。
 thumb7.forEach(function(thumbnail7) {
 
     thumbnail7.addEventListener('click', function() {
 
-        //🌼thumbnail1.getAttribute('属性名')　thumbnail1内の属性を取得する
+        //thumbnail1.getAttribute('属性名')　thumbnail1内の属性を取得する
         let src7 = thumbnail7.getAttribute('src');
-        //🌼main1のsrc属性を変数(src1)に代入
+        //main1のsrc属性を変数(src1)に代入
         main7.src = src7;
     });
  });
@@ -345,7 +345,7 @@ window.addEventListener('load', function(event) {
     document.getElementById('main_list7').addEventListener('click',  function() {
 
         const scroll_7 = document.getElementById('scroll_7');
-        //🌼特定の要素までスクロールする
+        //特定の要素までスクロールする
         scroll_7.scrollIntoView();
     });
 });
@@ -358,7 +358,7 @@ window.addEventListener('load', function(event) {
     document.getElementById('return_mp7').addEventListener('click', function() {
         
         const map = document.getElementById('map');
-        //🌼特定の要素までスクロールする
+        //特定の要素までスクロールする
         map.scrollIntoView();
     });
 }); 
@@ -370,14 +370,14 @@ window.addEventListener('load', function(event) {
 const main8 = document.getElementById('main8');
 const thumb8 = document.querySelectorAll('.thumb-img8');
 
-//🌼thumb1を1つずつ取り出して引数(thumbnail1)に代入し、中の処理を行わせる。
+//thumb1を1つずつ取り出して引数(thumbnail1)に代入し、中の処理を行わせる。
 thumb8.forEach(function(thumbnail8) {
 
     thumbnail8.addEventListener('click', function() {
 
-        //🌼thumbnail1.getAttribute('属性名')　thumbnail1内の属性を取得する
+        //thumbnail1.getAttribute('属性名')　thumbnail1内の属性を取得する
         let src8 = thumbnail8.getAttribute('src');
-        //🌼main1のsrc属性を変数(src1)に代入
+        //main1のsrc属性を変数(src1)に代入
         main8.src = src8;
     });
  });
@@ -390,7 +390,7 @@ window.addEventListener('load', function(event) {
     document.getElementById('main_list8').addEventListener('click',  function() {
 
         const scroll_8 = document.getElementById('scroll_8');
-        //🌼特定の要素までスクロールする
+        //特定の要素までスクロールする
         scroll_8.scrollIntoView();
     });
 });
@@ -403,7 +403,7 @@ window.addEventListener('load', function(event) {
     document.getElementById('return_mp8').addEventListener('click', function() {
         
         const map = document.getElementById('map');
-        //🌼特定の要素までスクロールする
+        //特定の要素までスクロールする
         map.scrollIntoView();
     });
 });  
