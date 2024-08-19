@@ -1,0 +1,397 @@
+body{
+    font-weight: bold;
+    /*background:#fcefed ; */ 
+}
+
+/*➀ヘッダー*/
+header img{
+    width: 14.5vw;
+    margin-right: 30px;
+    margin-left: 17px;
+}
+
+header{
+    /*子要素を横並びにする*/
+    display: flex;
+    font-size: 3vw;
+    width: 80%;
+    height: 80px;
+    line-height: 80px;
+    margin: 0 auto;
+}
+
+header span{
+    margin-right: 10px;
+    color: #2d2d2d;
+}
+
+/*➁メニュー*/
+/*ボタン*/
+.btn{
+    position: fixed;
+    top: 10px;
+    right: 20px;
+    height: 70px;
+    width: 70px;
+    background-color: #FFFF99;
+    z-index: 10;
+    border: 4px solid #FF4F50;
+    border-radius: 50%;
+}
+
+.btn i{
+    position: absolute;
+    left: 12px;
+    height: 6px;
+    width: 45px;
+    background: #FF4F50;
+    border-radius: 15%;
+    /*アニメーションの速度*/
+    /*.5s = 0.5秒*/
+    transition: .5s;
+}
+
+.btn i:nth-of-type(1){
+    top: 18px;
+}
+
+.btn i:nth-of-type(2){
+    top:32px;
+}
+
+.btn i:nth-of-type(3){
+    top:46px;
+}
+
+/*ボタン　active*/
+.btn.active i:nth-of-type(1){
+                /*下に14px*/
+    transform: translateY(14px)rotate(45deg);
+}
+
+.btn.active i:nth-of-type(2){
+    opacity: 0;
+}
+
+.btn.active i:nth-of-type(3){
+                 /*上に14px*/
+    transform: translateY(-14px)rotate(-45deg);
+}
+
+
+/*メニュー中身*/
+.container{
+    position: fixed;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #e6f5f5;
+    z-index: 9;
+    opacity: 0;
+    /*マウスイベントをキャンセル*/
+    pointer-events: none;
+    /*アニメーションの速度*/
+    /*.5s = 0.5秒*/
+    transition: .5s;
+}
+
+.item{
+   /*子要素を横並びにする*/
+   display: flex;
+   width: 650px;
+   margin: 130px auto; 
+   font-size: 25px;
+}
+
+.item ul li{
+    margin: 30px;
+    /*点を消す*/
+    list-style: none;
+    padding-bottom: 10px;
+}
+
+.item ul li a{
+    color: #222222;
+    /*線を消す*/
+    text-decoration: none;
+}
+
+/*メニュー中身　active*/
+.container.active{
+    opacity: 1;
+    /*マウスイベントをオン*/
+    pointer-events: auto;
+}
+
+
+/*➂スライド*/
+/*画像*/
+.slider{
+    width: 80%;
+    margin: 0 auto;
+    background: #FF4F50;
+    justify-content: center;
+    border-radius: 10px 10px 0 0;
+}
+
+#slide_img{
+    width: 65%; 
+    padding-left: 18%;
+    margin-top: 5px;
+}
+
+/*ボタン*/
+.button{
+    background:#FF4F50;
+    width: 80%;
+    margin: 0 auto;
+    height: 35px;
+    color: white;
+    font-size: 3vw;
+    /*子要素を横並びにする*/
+    display: flex;
+    /*アイテムを中央揃え*/
+    justify-content: center;
+    border-radius: 0 0 10px 10px;
+}
+
+/*戻る、次へ*/
+#prev,#next{
+    height: 35px;
+    line-height: 35px;
+    margin: 0 60px;
+    /*マウスの形が指マークになる*/
+    cursor:pointer;
+}
+
+/*ページ*/
+#page{
+    /*文字が選択できないようになる*/
+    user-select: none;
+    height: 35px;
+    line-height: 35px;
+}
+
+/*➃画面メニュー*/
+.menu{
+    background: #eae9e9;
+    width: 80%;
+    /*横/縦の比率*/
+    aspect-ratio: 6 / 1;
+    margin: 20px auto;
+    /*子要素を格子状に並べて配置する*/
+    display: grid;
+    /*横幅12vwを4つ*/
+    grid-template-columns: repeat(4,12vw);
+    /*余白*/
+    gap:4vw;
+    /*子要素を中心に持ってくる*/
+    justify-content: center;
+    border-radius: 10px;
+}
+
+/*グリッド*/
+.grid{
+    background-color: white;
+    margin: 10px 0;
+    border-radius: 10px;
+    text-align: center;
+    /*aタグを要素全体にカバーさせる*/
+    position: relative;
+}
+
+/*グリッドa要素*/
+.grid a{
+    text-decoration: none;
+    color: #222222;
+    font-size: 1.5vw;
+    padding-top: 10%;
+    /*aタグを要素全体にカバーさせる*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+/*aタグの最初の行のみ指定*/
+.grid a::first-line{
+    font-size: 4vw;
+}
+
+.gr1 a:first-line{
+    color: #48D1CC;
+}
+
+.gr2 a:first-line{
+    color: #00BFFF;
+}
+
+.gr3 a:first-line{
+    color: #FF6928;
+}
+
+.gr4 a:first-line{
+    color: #FF5192;
+}
+
+/*➄遊び*/
+main{
+    width: 90%;
+    margin: 0 auto;
+}
+
+/*フロアマップ*/
+.map img{
+    width: 90%;
+    /*「margin: 0 auto」はブロック要素に対して効くもの*/
+    /*ブロック：<div>*/
+    /*インライン：<a>タグ、imgタグ*/
+    display: block;
+    margin: 20px auto;
+}
+
+/*フロアマップメニュー*/
+.main_menu ul{
+    display: flex;
+    /*画面に収まらない場合は二段目にいく*/
+    flex-wrap: wrap;
+    width: 90%;
+    margin-left: 5vw;
+}
+
+.main_menu ul li{
+    /*点を消す*/
+    list-style: none;
+    width: 21%;
+    font-size: 1.5vw;
+    margin-top: 1vw;
+    margin-right: 2vw;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.826);
+}
+
+/*フロアマップメニュー数字*/
+.main_menu span{
+    font-weight: bold;
+    margin-right: 0.5vw;
+    background-color: #0066CC;
+    color: white;
+    display: inline-block;
+    width: 2vw;
+    height: 2vw;
+    text-align: center;
+    border-radius: 50px;
+}
+
+/*➄遊び*/
+/*パンこうじょう*/
+article:nth-of-type(1){
+    background: #ffdef0;
+    color: #ff4086	;
+}
+
+article:nth-of-type(2){
+    background: #f6e4fc;
+    color: #a62fce	;
+}
+
+article:nth-of-type(3){
+    background: #daf8ff;
+    color: #07c5f0	;
+}
+
+article:nth-of-type(4){
+    background: #FFEFD5;
+    color: #FF773E	;
+}
+
+article:nth-of-type(5){
+    background: #e0ffe0;
+    color: #5bcc53;
+}
+
+article:nth-of-type(6){
+    background: #e4eeff;
+    color: #116ef9;
+}
+
+article:nth-of-type(7){
+    background: #ffdfdf;
+    color: #fd4b4b;
+}
+
+
+article:nth-of-type(8){
+    background: #faf8c5;
+    color: #ebd80b	;
+}
+
+article{
+    width: 90%;
+    margin: 30px auto;
+    padding: 10px 0;
+    border-radius: 10px;
+    /*横/縦の比率*/
+    aspect-ratio: 4 / 2.3;
+}
+
+article h2{
+    margin:5px 0 5px 1vw;
+}
+
+article p{
+    margin:0 0 5px 1vw;
+    color: #2a2a2a;
+    font-size: 1vw;
+}
+
+.main_box{
+    /*子要素を横並びにする*/
+    display: flex;
+    width: 95%;
+    margin: 0px auto;
+}
+
+/*サブネイル画像*/
+.g-thumb{
+    width: 17.5vw;
+    border-radius: 5px;
+    /*横/縦の比率*/
+    aspect-ratio: 4 / 2.7;
+    /*サイズ変更した際の画像のゆがみを修正*/
+    object-fit: cover;
+}
+
+/*メイン画像*/
+.g-main{
+    width: 54vw;
+    margin-left: 0.5vw;
+    border-radius: 5px;
+    /*横/縦の比率*/
+    aspect-ratio: 4 / 2.7;
+    /*サイズ変更した際の画像のゆがみを修正*/
+    object-fit: cover;
+}
+
+/*フロアマップへ*/
+article span{
+    float: right;
+    color: #222222;
+    border-bottom: 1px solid #222222;
+    margin:0 1vw 0 0;
+    font-size: 1.3vw;
+}
+
+/*➅フッター*/
+footer{
+    background: #f95454;
+    color: white;
+    text-align: center;
+    height: 200px;
+    border-top:50px solid #f8f877;
+    margin-top: 100px;
+    padding-top: 30px;
+}
+
+
