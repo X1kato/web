@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    /*🌼要素のwidthとheightにpaddingやborderのサイズが含まれる*/
+    /*要素のwidthとheightにpaddingやborderのサイズが含まれる*/
     box-sizing: border-box;
     font-weight: bold;
     color: #2d2d2d;
@@ -39,8 +39,8 @@ header{
     width: 45px;
     background: #FF4F50;
     border-radius: 15%;
-    /*🌼アニメーションの速度*/
-    /*🌼.5s = 0.5秒*/
+    /*アニメーションの速度*/
+    /*.5s = 0.5秒*/
     transition: .5s;
 }
 
@@ -56,9 +56,9 @@ header{
     top:47px;
 }
 
-/*🌟ボタン　active*/
+/*ボタン　active*/
 .btn.active i:nth-of-type(1){
-                /*🌼下に14px*/
+                /*下に14px*/
     transform: translateY(14px)rotate(45deg);
 }
 
@@ -67,7 +67,7 @@ header{
 }
 
 .btn.active i:nth-of-type(3){
-                 /*🌼上に14px*/
+                 /*上に14px*/
     transform: translateY(-14px)rotate(-45deg);
 }
 
@@ -82,15 +82,15 @@ header{
     background: #e6f5f5;
     z-index: 9;
     opacity: 0;
-    /*🌼マウスイベントをキャンセル*/
+    /*マウスイベントをキャンセル*/
     pointer-events: none;
-    /*🌼アニメーションの速度*/
-    /*🌼.5s = 0.5秒*/
+    /*アニメーションの速度*/
+    /*.5s = 0.5秒*/
     transition: .5s;
 }
 
 .item{
-   /*🌼子要素を横並びにする*/
+   /*子要素を横並びにする*/
    display: flex;
    width: 650px;
    margin: 130px auto; 
@@ -99,30 +99,30 @@ header{
 
 .item ul li{
     margin: 30px;
-    /*🌼点を消す*/
+    /*点を消す*/
     list-style: none;
     padding-bottom: 10px;
 }
 
 .item ul li a{
     color: #222222;
-    /*🌼線を消す*/
+    /*線を消す*/
     text-decoration: none;
 }
 
-/*🌟メニュー中身　active*/
+/*メニュー中身　active*/
 .container.active{
     opacity: 1;
-    /*🌼マウスイベントをオン*/
+    /*マウスイベントをオン*/
     pointer-events: auto;
 }
 
 /*➂選択ボタン*/
 .choice{
-    /*🌼子要素を横並びにする*/
+    /*子要素を横並びにする*/
     display: flex;
     margin-top: 60px;
-    /*🌼要素を中央揃え*/
+    /*要素を中央揃え*/
     justify-content: center;
 }
 
@@ -143,7 +143,7 @@ header{
     border-radius: 5px 0px 0px 5px;
 }
 
-/*Ⓐごはんボタン　🌟active*/
+/*Ⓐごはんボタン　active*/
 #food_btn.active{
     color: #f7ab68;
     background: white;
@@ -157,7 +157,7 @@ header{
     border-radius: 0px 5px 5px 0px;
 }
 
-/*Ⓑショップボタン　🌟active*/
+/*Ⓑショップボタン　active*/
 #shop_btn.active{
     background: #f7ab68;
     color: white;
@@ -177,7 +177,7 @@ main{
     width: 100%;
 }
 
-/*Ⓐごはん中身　🌟active*/
+/*Ⓐごはん中身　active*/
 .food.active{
     opacity: 0;
     /*🌼マウスイベントをキャンセル*/
@@ -186,13 +186,13 @@ main{
 
 /* ➈ごはんボタン枠 */
 .food_buttons{
-    /* 🌼子要素を横並びにする */
+    /* 子要素を横並びにする */
     display: flex;
-    /* 🌼子要素を縦軸の中央に配置 */
+    /* 子要素を縦軸の中央に配置 */
     align-items: center;
     margin:30px auto;
     width: 70%;
-    /* 🌼入りきらない場合は2段目へ */
+    /* 入りきらない場合は2段目へ */
     flex-wrap: wrap;
 }
 
@@ -201,7 +201,7 @@ main{
     padding: 8px 10px;
     border: none;
     border-radius: 5px;
-    /* 🌼要素にマウスを乗せたときに、カーソルがポインターに変化 */
+    /* 要素にマウスを乗せたときに、カーソルがポインターに変化 */
     cursor: pointer;
     margin-right: 10px;
     margin-top: 10px;
@@ -214,9 +214,9 @@ main{
 
 /* (11)ごはんアイテム枠 */
 .food_items{
-    /* 🌼子要素を横並びにする */
+    /* 子要素を横並びにする */
     display: flex;
-    /* 🌼入りきらない場合は２段目へ */
+    /* 入りきらない場合は２段目へ */
     flex-wrap: wrap;
     width: 80%;
     margin: 40px auto;
@@ -235,11 +235,11 @@ main{
     height: 80%;
     border: solid 1.5px #9e9e9e;
     border-radius: 10px;
-    /* 🌼画像を整える */
+    /* 画像を整える */
     object-fit: cover;
 }
 
-/* 🌼マウスを乗せると画像を大きく表示 */
+/* マウスを乗せると画像を大きく表示 */
 .food_item img:hover{
     transform: scale(1.7, 1.7);
 }
@@ -248,7 +248,7 @@ main{
     font-size: 0.9vw;
 }
 
-/* 🌼非表示 */
+/* 非表示 */
 .food_item.hide{
     display: none;
 }
@@ -260,14 +260,14 @@ main{
     position: absolute;
     width: 100%;
     opacity: 0;
-    /*🌼マウスイベントをキャンセル*/
+    /*マウスイベントをキャンセル*/
     pointer-events: none;
 }
 
-/*Ⓑショップ中身　🌟active*/
+/*Ⓑショップ中身　active*/
 .shop.active{
     opacity: 1;
-    /*🌼マウスイベントをオン*/
+    /*マウスイベントをオン*/
     pointer-events: auto;
 }
 
@@ -319,7 +319,7 @@ article:nth-of-type(7){
 
 /*➅ショップcontent*/
 .content{
-    /*🌼子要素を横並びにする*/
+    /*子要素を横並びにする*/
     display: flex;
 }
 
