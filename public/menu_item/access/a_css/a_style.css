@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    /*🌼要素のwidthとheightにpaddingやborderのサイズが含まれる*/
+    /*要素のwidthとheightにpaddingやborderのサイズが含まれる*/
     box-sizing: border-box;
     font-weight: bold;
     color: #2d2d2d;
@@ -39,8 +39,8 @@ header{
     width: 45px;
     background: #FF4F50;
     border-radius: 15%;
-    /*🌼アニメーションの速度*/
-    /*🌼.5s = 0.5秒*/
+    /*アニメーションの速度*/
+    /*.5s = 0.5秒*/
     transition: .5s;
 }
 
@@ -56,9 +56,9 @@ header{
     top:47px;
 }
 
-/*🌟ボタン　active*/
+/*ボタン　active*/
 .btn.active i:nth-of-type(1){
-                /*🌼下に14px*/
+                /*下に14px*/
     transform: translateY(14px)rotate(45deg);
 }
 
@@ -67,7 +67,7 @@ header{
 }
 
 .btn.active i:nth-of-type(3){
-                 /*🌼上に14px*/
+                 /*上に14px*/
     transform: translateY(-14px)rotate(-45deg);
 }
 
@@ -82,15 +82,15 @@ header{
     background: #e6f5f5;
     z-index: 9;
     opacity: 0;
-    /*🌼マウスイベントをキャンセル*/
+    /*マウスイベントをキャンセル*/
     pointer-events: none;
-    /*🌼アニメーションの速度*/
-    /*🌼.5s = 0.5秒*/
+    /*アニメーションの速度*/
+    /*.5s = 0.5秒*/
     transition: .5s;
 }
 
 .item{
-   /*🌼子要素を横並びにする*/
+   /*子要素を横並びにする*/
    display: flex;
    width: 650px;
    margin: 130px auto; 
@@ -99,30 +99,30 @@ header{
 
 .item ul li{
     margin: 30px;
-    /*🌼点を消す*/
+    /*点を消す*/
     list-style: none;
     padding-bottom: 10px;
 }
 
 .item ul li a{
     color: #222222;
-    /*🌼線を消す*/
+    /*線を消す*/
     text-decoration: none;
 }
 
-/*🌟メニュー中身　active*/
+/*メニュー中身　active*/
 .container.active{
     opacity: 1;
-    /*🌼マウスイベントをオン*/
+    /*マウスイベントをオン*/
     pointer-events: auto;
 }
 
 /*➂選択ボタン*/
 .choice{
-    /*🌼子要素を横並びにする*/
+    /*子要素を横並びにする*/
     display: flex;
     margin-top: 60px;
-    /*🌼要素を中央揃え*/
+    /*要素を中央揃え*/
     justify-content: center;
 }
 
